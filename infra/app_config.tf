@@ -6,9 +6,5 @@ module "app_config" {
   key_values          = local.app_config_kv_map
 
 
-  tags = {
-    environment = var.environment
-    channel     = var.channel
-    project     = var.project_short
-  }
+  tags = local.tags
 }
