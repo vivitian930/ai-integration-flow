@@ -1,3 +1,9 @@
+.vscode
+
+# Terraform
+*/*terraform*
+*tfplan
+
 # Logs
 logs
 *.log
