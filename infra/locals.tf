@@ -16,4 +16,12 @@ locals {
       label = "dev"
     }
   }
+
+  web_app_settings = {
+    "BASIC_AUTH_TOKEN"           = "@Microsoft.KeyVault(VaultName=kv-aue-eric-01;SecretName=BASIC-AUTH-TOKEN)"
+    "OPENAI_ORG"                 = "@Microsoft.KeyVault(VaultName=kv-aue-eric-01;SecretName=OPENAI-ORG)"
+    "OPENAI_API_KEY"             = "@Microsoft.KeyVault(VaultName=kv-aue-eric-01;SecretName=OPENAI-KEY)"
+    "DOCKER_REGISTRY_SERVER_URL" = "https://index.docker.io/v1"
+    "WEBSITES_PORT"              = "3080"
+  }
 }
