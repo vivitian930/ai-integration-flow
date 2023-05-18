@@ -18,6 +18,8 @@ RUN apk update && apk add -u openssl && npm install && chown -R appuser:appuser 
 
 USER appuser
 
+EXPOSE 3080
+
 COPY . .
 
 CMD ["node", "index.js"]
