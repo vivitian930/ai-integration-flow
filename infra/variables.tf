@@ -21,3 +21,13 @@ variable "solution" {
   description = "solution"
   type        = string
 }
+
+variable "key_vault_name" {
+  type        = string
+  description = "key vault name"
+}
+
+variable "key_vault_rg_name" {
+  type        = string
+  description = "key vault resource group name"
+}
